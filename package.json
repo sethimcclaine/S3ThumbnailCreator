@@ -1,0 +1,26 @@
+{
+  "name": "s3bucketthumbnails",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf function.zip",
+    "prune": "npm prune --production",
+    "zip": "npm run clean; npm run prune; zip -r function.zip . --exclude function.zip README.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sethimcclaine/S3BucketThumbnails.git"
+  },
+  "author": "sethimcclaine@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sethimcclaine/S3BucketThumbnails/issues"
+  },
+  "homepage": "https://github.com/sethimcclaine/S3BucketThumbnails#readme",
+  "description": "",
+  "dependencies": {
+    "aws-sdk": "^2.1691.0",
+    "sharp": "^0.33.5"
+  }
+}
