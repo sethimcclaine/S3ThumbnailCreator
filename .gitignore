@@ -130,4 +130,4 @@ dist
 .pnp.*
 
 # build files
-function.zip
+S3BucketThumbnails.zip

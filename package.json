@@ -4,9 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rm -rf function.zip",
+    "clean": "rm -rf S3BucketThumbnails.zip",
     "prune": "npm prune --production",
-    "zip": "npm run clean; npm run prune; zip -r function.zip . --exclude function.zip README.md"
+    "zip": "npm run clean; npm run prune; zip -r S3BucketThumbnails.zip . --exclude 'README.md' '.git/*' 'package*'"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
     "url": "https://github.com/sethimcclaine/S3BucketThumbnails/issues"
   },
   "homepage": "https://github.com/sethimcclaine/S3BucketThumbnails#readme",
-  "description": "",
+  "description": "creates a thumbnail for a given event: {Bucket: [S3Bucket: String]; Key: [ImageKey: String]}",
   "dependencies": {
     "aws-sdk": "^2.1691.0",
     "sharp": "^0.33.5"
