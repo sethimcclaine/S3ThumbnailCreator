@@ -9,6 +9,6 @@ correct version run:
 ### Update Function
 Currently just ziping this locally and uploading the zip manually
 
-https://us-east-1.console.aws.amazon.com/lambda/home?region=us-east-1#/functions/McClaineMedia-S3ThumbnailCreator?newFunction=true&tab=code
+https://us-east-1.console.aws.amazon.com/lambda/home?region=us-east-1#/functions/McClaineMedia-S3ThumbnailCreator?newFunction=true
 
 `npm run zip`
