@@ -1,3 +1,6 @@
+## Note
+This is used to by BulkS3ThumbNails to generate multiple images instead of one
+at a time
 ### Lambda setup
 * This will likely time out, so need to update 'Configuration' -> 'Timeout'
 
